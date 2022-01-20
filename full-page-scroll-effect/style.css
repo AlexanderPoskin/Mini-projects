@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-size: 38px;
+  line-height: 42px;
+  scroll-snap-align: start;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.one {
+  background: salmon;
+}
+
+.two {
+  background: steelblue;
+}
+
+.three {
+  background: greenyellow;
+}
+
+.four {
+  background: plum;
+}
