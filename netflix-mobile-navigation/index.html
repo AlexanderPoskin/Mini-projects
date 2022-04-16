@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix Mobile Navigation</title>
+  </head>
+  <body>
+    <button class="nav-btn open-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <img
+      src="data:image/png;base64,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"
+      alt="logo"
+      class="logo"
+    />
+    <p class="text">Mobile Navigation</p>
+    <div class="nav nav-black">
+      <div class="nav nav-red">
+        <div class="nav nav-white">
+          <button class="nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAACDCAMAAACdk99AAAAAhFBMVEUAAADlCRXoCRU9AwXYCRMAAgDtCRYAAwWoBg8QAgObBw4zBAOUBgy0Bw7rCRjFBxEbAAKGCAwrBAR6BAjfCBa/BxCwBxDOCBNMAgdFBQjzCRdgBAdqBgpcBgiiBxEgAgJyBQtSBgYwAweNBQwWAQWNBRMYBgAmBQD5CBQ6BAokAQNOAxId75CAAAAGnklEQVR4nO2a7XaquhZAQyQJWgUREEGpivTetuf93+8kawHy1Rb3Vuk4Y80/bSIJZJKElQBjBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ/1HE31eh1EA96udiYujcP5d7LKL1pwKuaj7aFR7ez4YKlPqyjY1fGnLE8DU9CcXUZmb4LDPmCSSxefhTk2Iwd5bo40Xey16zqvqXznnnL5C9MUrmH7PGOZlYYzLvK34Giq1fQ1uzwNulZpZJ2Qlc9hITV+KMsWIR2l3CmW6J08vf60qw+lW7o4h8a0rZF5NbYMEwwc6mAqzybXwfvS9rR3LOpZfgJe9Szi2X78z/84VOtLB0G+evqdXJ5qlpzUp28q2DrmRrqude56wvns525RISPjfHpAs0kkcm5VrZEyW00EYswwnvSJLq/3ltxGoTghFpdZGlkQ5gxDUV9o1wkw1G1Eus7Vncgl/UHqpxnfVEXaQyIl8LSIIRq2mEX1vIw2yMkaoEvxqJOmdtGoFjdFJmuo8I3anAfTCVkMoIx6ljwEgDt2UEb2xpRNRGaoPcGmvkDIV4pIWIF7wAb/NEB22qUZOeIDlkJKyxjZEFZlgh/GZDQs9ClRG7PtiMsVFGWGxSoaW9svJyLk8T0KMy4kbwtOsZ0bNicMU8RTPf/Ofbpo9I5wT5m2rU8PhUH3wyR48yEqB6PbeusXfZ03WR2oglc5Ps9xG5HS4H9zUN6gw0IqPO+B9lpOAw1rwju7g4q92ncX/E1YhvkgNGVuuhchs04tcZf2OkHCvhSUGtVvq/iSJWQ23EjU1UPZERHQZB1wjwUrzpfDSMWPLMJusjmwgnoRBn+eROjfsjGkYcNZkR4UvI4CF0keJerfsTrkZ4XAyNGvdGI53l9EgjZ7uMY7QSGUy6I3A1oiP54WdNaaR9mV8bQcRNRtgajsO+Gie/xQh3BoyEcnWcz4+a/8+bF/qFER4fMBjxy7lgpBEVlMEut+SSTUrTSLzTk363j+ibhry34sgvjFg8Rd7LSGWkEZZ7lRE7U2LKTlIbMUHSm/hmXeOOMlJRrgpGGxGv1RppOCJ8HpWRkMOU8Y0R/lAjKikLhoeHtHM8YEQvXmLTC+xdf11Tt1GOGzWlvhuNKCUiLOpNvfVcGnG2EDQGA32kHN9hemmGGl8ZCSXuEtxqhLGVhGDEeVBDR4NGXAfiZx4Nzqyua2bW9G2MEWnbpmGhdcLssaOGfcBiWj97Jw3PWG1ke4QQiR/6e2hRdj4nSTJL8ma5n2LW6nFx68waWv7Ew6YywlZwh8odtVaENvia4L5RPGOzuJyB3OHzPY/KiMhwGrB6Rp6xrmHKrx41PM6mXPlejcxVeH2sPN/I5rpvzS+/xYjD+WRGxD6sb4cbfUy/rgEjs2s89nQjzfWmJfe/wwhjsfsoI72wq2OkClixo0hnPvm6Bo1cJP/WSKutNxrpfBjRNqLEEh/6rx70qHAz+a4iGjnzQSP6pzK4EMX1wXjbqIn32S752BTVjx0jDFKWPVtChFzFu9PQMJJH7oARHaEdgstiu4q8OD7X5W7rI+all23HcexFC2O1M2pO73DQVuxg3Lj2o1v9HQ0jzE8HjOiUlPiy3zXfBpTcaMSqvxuAl+IdI7Y5KOQZY7Dc4+6UW89NI1m12fndtwElNxupxMAk2zZykCYWciM9fA64ONpOOJE0jKh6s3O0EXldhAjcVfzZiDmgbWSFr60yoQSz4SA7Z5PRMCLY5Zs+EupJr2HkJdbLYTdtGnk3m4lx14heOeOLh7LqqGcEuyYPhXmaLTAweZuukzRHDdvZ7qAR89mR2Q/gjT7ieNuts218CZTBjvO+8yWeH3uxbYdQXCNTrzez4qpXyzUWPvA5vJpuudc0olTUNvIOzZCWfkxEW2fpn66dWa2Pxbooehfe3TSeH4+fn5tNnufJeX/yL84SjYCdhakowcgwxNh9jnOrve9W/DRafYQF+l66OuMf/b+YB84yOCf5p2KDX57+DYUWFCxNuC58UJAu8QoU7tDIxZ1POB40Um2C5J4XrbSHz+Yh6gEv6mFo4QA7Jodg6ax25S+Jjd/yze5+zpGst6kO3m2Im3Q4/QEfxEGXQA2Pm+HKmsG3PmE12go/tnWnlcGXBR9METiX4JBVd+RZSyxVn0t1T3xMssPp4pwm+p5VsPWaff2d9mSI9eCK+/H8PhUGuKq7T+YEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRDEb+VfQmN86GdR4PIAAAAASUVORK5CYII="
+            alt="logo"
+            class="logo"
+          />
+          <ul class="list">
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Life at Netflix</a></li>
+            <li>
+              <ul>
+                <li><a href="#">Netflix culture memo</a></li>
+                <li><a href="#">Work life balance</a></li>
+                <li><a href="#">Inclusion & diversity</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
